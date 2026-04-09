@@ -9,7 +9,13 @@ lerna-debug.log*
 
 node_modules
 .DS_Store
-dist
+# Track dist outputs needed for GitHub Pages (subtree push); ignore everything else in dist
+dist/*
+!dist/index.html
+!dist/assets/
+!dist/assets/**
+!dist/favicon.ico
+!dist/.nojekyll
 dist-ssr
 coverage
 *.local
